@@ -1,0 +1,65 @@
+<resources>
+    <string name="app_name" translatable="false">Search &amp; Find</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+
+    <string name="onboarding1">Easily add information about your lost item</string>
+    <string name="onboarding2">Search for your lost items</string>
+    <string name="onboarding3">Find and enjoy</string>
+    <string name="mask_phone_number" translatable="false">*### ## ### ## ##</string>
+    <string name="next">Next</string>
+    <string name="continue_">Continue</string>
+    <string name="home">Home</string>
+    <string name="saved">Saved</string>
+    <string name="add">Add</string>
+    <string name="chat">Chat</string>
+    <string name="profile">Profile</string>
+    <string name="save">Save</string>
+    <string name="add_a_picture">Add a picture</string>
+    <string name="title">Title</string>
+    <string name="description">Description</string>
+    <string name="place_of_lost_or_found">Place of lost/found</string>
+    <string name="place_of_lost">Place of lost</string>
+    <string name="place_of_found">Place of found</string>
+    <string name="phone_number">Phone number</string>
+    <string name="email">Email</string>
+    <string name="telegram">Telegram (user name)</string>
+    <string name="instagram">Instagram (user name)</string>
+    <string name="create_account">Create account</string>
+    <string name="log_in">Log in</string>
+    <string name="all" translatable="false">All</string>
+    <string name="successfully_added">Successfully added!</string>
+    <string name="something_went_wrong">Something went wrong!</string>
+    <string name="category">Category</string>
+    <string name="status">Status</string>
+    <string name="main_picture" translatable="false">Main picture</string>
+    <string name="search">Search</string>
+    <string name="i_found" translatable="false">I found</string>
+    <string name="contact_info">Contact info</string>
+    <string name="notifications">Notifications</string>
+    <string name="your_thing_has_been_found" translatable="false">Your thing has been found!</string>
+    <string name="set_all_incoming_notifications" translatable="false">Set all incoming notifications</string>
+    <string name="language">Language</string>
+    <string name="uzbek" translatable="false">Uzbek</string>
+    <string name="english" translatable="false">English</string>
+    <string name="russian" translatable="false">Russian</string>
+    <string name="sign_up" translatable="false">Sign up</string>
+    <string name="otp" translatable="false">OTP</string>
+    <string name="verification_code">Verification code</string>
+    <string name="we_have_sent_the_code">We have sent the code verification to your mobile number</string>
+    <string name="user_data">User data</string>
+    <string name="name">Name</string>
+    <string name="surname">Surname</string>
+    <string name="data_saved_successfully">Data saved successfully!</string>
+    <string name="the_code_did_not_match">The code did not match, please re-enter the code</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+    <string name="edit_profile">Edit profile</string>
+    <string name="show_notifications" translatable="false">Show notifications</string>
+    <string name="messages">Messages</string>
+    <string name="i_have_information_about_your_item">Hi! I have information about your item.</string>
+    <string name="delete">Delete</string>
+    <string name="notification_sended">Notification sended</string>
+    <string name="notify">Notify</string>
+
+</resources>

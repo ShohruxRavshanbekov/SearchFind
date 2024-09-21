@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_main"
+    app:startDestination="@id/onboardingScreen">
+
+    <fragment
+        android:id="@+id/onboardingScreen"
+        android:name="uz.futuresoft.searchfind.ui.screens.onboarding.OnboardingScreen"
+        android:label="screen_onboarding"
+        tools:layout="@layout/screen_onboarding">
+        <action
+            android:id="@+id/action_onboardingScreen_to_mainScreen"
+            app:destination="@id/mainScreen"
+            app:enterAnim="@anim/enter"
+            app:exitAnim="@anim/exit"
+            app:popEnterAnim="@anim/pop_enter"
+            app:popExitAnim="@anim/pop_exit"
+            app:popUpTo="@id/onboardingScreen"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/mainScreen"
+        android:name="uz.futuresoft.searchfind.ui.screens.main.MainScreen"
+        android:label="screen_main"
+        tools:layout="@layout/screen_main">
+        <action
+            android:id="@+id/action_mainScreen_to_notificationsScreen"
+            app:destination="@id/notificationsScreen"
+            app:enterAnim="@anim/enter"
+            app:exitAnim="@anim/exit"
+            app:popEnterAnim="@anim/pop_enter"
+            app:popExitAnim="@anim/pop_exit" />
+        <action
+            android:id="@+id/action_mainScreen_to_itemDetailScreen"
+            app:destination="@id/itemDetailScreen"
+            app:enterAnim="@anim/enter"
+            app:exitAnim="@anim/exit"
+            app:popEnterAnim="@anim/pop_enter"
+            app:popExitAnim="@anim/pop_exit" />
+        <action
+            android:id="@+id/action_mainScreen_to_authScreen"
+            app:destination="@id/authScreen"
+            app:enterAnim="@anim/enter"
+            app:exitAnim="@anim/exit"
+            app:popEnterAnim="@anim/pop_enter"
+            app:popExitAnim="@anim/pop_exit" />
+        <action
+            android:id="@+id/action_mainScreen_to_editUserInfoScreen"
+            app:destination="@id/editUserInfoScreen"
+            app:enterAnim="@anim/enter"
+            app:exitAnim="@anim/exit"
+            app:popEnterAnim="@anim/pop_enter"
+            app:popExitAnim="@anim/pop_exit" />
+        <action
+            android:id="@+id/action_mainScreen_to_notificationBottomSheetDialog"
+            app:destination="@id/notificationBottomSheetDialog" />
+        <action
+            android:id="@+id/action_mainScreen_to_appLanguageBottomSheetDialog"
+            app:destination="@id/appLanguageBottomSheetDialog" />
+    </fragment>
+    <fragment
+        android:id="@+id/notificationsScreen"
+        android:name="uz.futuresoft.searchfind.ui.screens.notifications.NotificationsScreen"
+        android:label="screen_notifications"
+        tools:layout="@layout/screen_notifications" />
+    <fragment
+        android:id="@+id/itemDetailScreen"
+        android:name="uz.futuresoft.searchfind.ui.screens.itemDetail.ItemDetailScreen"
+        android:label="screen_item_detail"
+        tools:layout="@layout/screen_item_detail" />
+    <fragment
+        android:id="@+id/authScreen"
+        android:name="uz.futuresoft.searchfind.ui.screens.auth.AuthScreen"
+        android:label="screen_auth"
+        tools:layout="@layout/screen_auth" />
+    <fragment
+        android:id="@+id/editUserInfoScreen"
+        android:name="uz.futuresoft.searchfind.ui.screens.editUserInfo.EditUserInfoScreen"
+        android:label="screen_edit_user_info"
+        tools:layout="@layout/screen_edit_user_info" />
+    <dialog
+        android:id="@+id/notificationBottomSheetDialog"
+        android:name="uz.futuresoft.searchfind.ui.screens.main.profile.dialogs.notifiaction.NotificationBottomSheetDialog"
+        android:label="NotificationBottomSheetDialog"
+        tools:layout="@layout/bottom_sheet_dialog_notification" />
+    <dialog
+        android:id="@+id/appLanguageBottomSheetDialog"
+        android:name="uz.futuresoft.searchfind.ui.screens.main.profile.dialogs.appLanguage.AppLanguageBottomSheetDialog"
+        android:label="AppLanguageBottomSheetDialog"
+        tools:layout="@layout/bottom_sheet_dialog_app_language" />
+
+</navigation>

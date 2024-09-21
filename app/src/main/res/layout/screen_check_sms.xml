@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/screen_background"
+    android:orientation="vertical"
+    tools:context=".ui.screens.auth.checkSms.CheckSmsScreen">
+
+    <LinearLayout
+        android:id="@+id/action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_marginTop="@dimen/status_bar_size"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin16"
+            android:layout_weight="0"
+            android:src="@drawable/ic_arrow_left"
+            app:tint="@color/primary" />
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/HeaderText2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin16"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:padding="@dimen/padding1"
+            android:text="@string/otp"
+            android:textAlignment="center" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin16"
+            android:layout_weight="0"
+            android:src="@drawable/ic_chat"
+            android:visibility="invisible"
+            app:tint="@color/primary" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin16"
+        android:layout_marginTop="@dimen/margin24"
+        android:fontFamily="@font/poppins_bold"
+        android:includeFontPadding="false"
+        android:padding="@dimen/padding1"
+        android:text="@string/verification_code"
+        android:textColor="@color/black"
+        android:textSize="@dimen/textSize20" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin16"
+        android:layout_marginTop="@dimen/margin4"
+        android:fontFamily="@font/poppins_medium"
+        android:includeFontPadding="false"
+        android:padding="@dimen/padding1"
+        android:text="@string/we_have_sent_the_code"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/phone_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin16"
+        android:layout_marginTop="@dimen/margin8"
+        android:fontFamily="@font/poppins_bold"
+        android:includeFontPadding="false"
+        android:padding="@dimen/padding1"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/textSize16"
+        tools:text="+998 90 123 45 67" />
+
+    <com.fraggjkee.smsconfirmationview.SmsConfirmationView
+        android:id="@+id/sms_code_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin16"
+        android:layout_marginTop="@dimen/margin32"
+        android:gravity="center_horizontal"
+        app:scv_codeLength="6"
+        app:scv_showCursor="false"
+        app:scv_symbolBackgroundColor="@color/white"
+        app:scv_symbolBorderActiveColor="@color/primary"
+        app:scv_symbolBorderColor="@color/grayscale200"
+        app:scv_symbolBorderCornerRadius="@dimen/cornerRadius12"
+        app:scv_symbolTextFont="@font/poppins_semi_bold" />
+
+</LinearLayout>

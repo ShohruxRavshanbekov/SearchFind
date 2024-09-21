@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/screen_background"
+    android:orientation="vertical"
+    tools:context=".ui.screens.auth.userData.UserDataScreen">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_marginTop="@dimen/status_bar_size"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingHorizontal="@dimen/padding16">
+
+        <TextView
+            style="@style/HeaderText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding1"
+            android:text="@string/user_data" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/container_student"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/margin16">
+
+            <FrameLayout
+                android:id="@+id/add_picture"
+                android:layout_width="@dimen/size100"
+                android:layout_height="@dimen/size100"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/select_picture_background"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="@dimen/size24"
+                        android:layout_height="@dimen/size24"
+                        android:background="@color/primary"
+                        android:src="@drawable/ic_plus"
+                        app:contentPadding="@dimen/padding2"
+                        app:shapeAppearanceOverlay="@style/CornerSize50Percent"
+                        app:tint="@color/white" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin8"
+                        android:fontFamily="@font/poppins_regular"
+                        android:includeFontPadding="false"
+                        android:padding="@dimen/padding1"
+                        android:text="@string/add_a_picture"
+                        android:textColor="@color/primary"
+                        android:textSize="@dimen/textSize12" />
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/picture"
+                android:layout_width="@dimen/size100"
+                android:layout_height="@dimen/size100"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/grayscale200"
+                android:scaleType="centerCrop"
+                android:visibility="invisible"
+                app:shapeAppearanceOverlay="@style/CornerSize50Percent" />
+
+        </FrameLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin16"
+            android:layout_marginTop="@dimen/margin8"
+            app:boxCornerRadiusBottomEnd="@dimen/cornerRadius16"
+            app:boxCornerRadiusBottomStart="@dimen/cornerRadius16"
+            app:boxCornerRadiusTopEnd="@dimen/cornerRadius16"
+            app:boxCornerRadiusTopStart="@dimen/cornerRadius16"
+            app:endIconMode="clear_text">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/poppins_regular"
+                android:hint="@string/name"
+                android:imeOptions="actionNext"
+                android:includeFontPadding="false"
+                android:inputType="textCapSentences" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin16"
+            android:layout_marginTop="@dimen/margin8"
+            app:boxCornerRadiusBottomEnd="@dimen/cornerRadius16"
+            app:boxCornerRadiusBottomStart="@dimen/cornerRadius16"
+            app:boxCornerRadiusTopEnd="@dimen/cornerRadius16"
+            app:boxCornerRadiusTopStart="@dimen/cornerRadius16"
+            app:endIconMode="clear_text">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/surname"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/poppins_regular"
+                android:hint="@string/surname"
+                android:imeOptions="actionDone"
+                android:includeFontPadding="false"
+                android:inputType="textCapSentences" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/create_account"
+            style="@style/ButtonPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin16"
+            android:enabled="false"
+            android:text="@string/create_account" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/screen_background"
+    android:orientation="vertical"
+    tools:context=".ui.screens.auth.logIn.LogInScreen">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_marginTop="@dimen/status_bar_size"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingHorizontal="@dimen/padding16">
+
+        <TextView
+            style="@style/HeaderText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding1"
+            android:text="@string/log_in" />
+
+    </LinearLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin16"
+        android:layout_marginTop="@dimen/margin8"
+        app:boxCornerRadiusBottomEnd="@dimen/cornerRadius16"
+        app:boxCornerRadiusBottomStart="@dimen/cornerRadius16"
+        app:boxCornerRadiusTopEnd="@dimen/cornerRadius16"
+        app:boxCornerRadiusTopStart="@dimen/cornerRadius16"
+        app:endIconMode="clear_text"
+        app:hintEnabled="false">
+
+        <com.vicmikhailau.maskededittext.MaskedEditText
+            android:id="@+id/phone_number"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/white"
+            android:backgroundTintMode="screen"
+            android:fontFamily="@font/poppins_regular"
+            android:hint="@string/phone_number"
+            android:imeOptions="actionDone"
+            android:includeFontPadding="false"
+            android:inputType="phone"
+            app:mask="@string/mask_phone_number" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/next"
+        style="@style/ButtonPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin16"
+        android:enabled="false"
+        android:text="@string/next" />
+
+</LinearLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_auth"
+    app:startDestination="@id/logInScreen">
+
+    <fragment
+        android:id="@+id/logInScreen"
+        android:name="uz.futuresoft.searchfind.ui.screens.auth.logIn.LogInScreen"
+        android:label="screen_log_in"
+        tools:layout="@layout/screen_log_in">
+        <action
+            android:id="@+id/action_logInScreen_to_checkSmsScreen"
+            app:destination="@id/checkSmsScreen"
+            app:enterAnim="@anim/enter"
+            app:exitAnim="@anim/exit"
+            app:popEnterAnim="@anim/pop_enter"
+            app:popExitAnim="@anim/pop_exit" />
+    </fragment>
+    <fragment
+        android:id="@+id/checkSmsScreen"
+        android:name="uz.futuresoft.searchfind.ui.screens.auth.checkSms.CheckSmsScreen"
+        android:label="screen_check_sms"
+        tools:layout="@layout/screen_check_sms">
+        <action
+            android:id="@+id/action_checkSmsScreen_to_userDataScreen"
+            app:destination="@id/userDataScreen"
+            app:enterAnim="@anim/enter"
+            app:exitAnim="@anim/exit"
+            app:popEnterAnim="@anim/pop_enter"
+            app:popExitAnim="@anim/pop_exit"
+            app:popUpTo="@id/logInScreen"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/userDataScreen"
+        android:name="uz.futuresoft.searchfind.ui.screens.auth.userData.UserDataScreen"
+        android:label="screen_user_data"
+        tools:layout="@layout/screen_user_data" />
+</navigation>

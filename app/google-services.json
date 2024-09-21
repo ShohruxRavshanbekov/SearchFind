@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "885461066264",
+    "project_id": "search-and-find-780e2",
+    "storage_bucket": "search-and-find-780e2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:885461066264:android:90bd72c529cc0ff77f196d",
+        "android_client_info": {
+          "package_name": "uz.futuresoft.searchfind"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDG6AC42gFfHB17jkUQITAIzjIopChoG2Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

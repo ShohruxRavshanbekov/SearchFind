@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/screen_background"
+    android:orientation="vertical"
+    tools:context=".ui.screens.editUserInfo.EditUserInfoScreen">
+
+    <LinearLayout
+        android:id="@+id/action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_marginTop="@dimen/status_bar_size"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@id/nested_scroll_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin16"
+            android:layout_weight="0"
+            android:src="@drawable/ic_arrow_left"
+            app:tint="@color/primary" />
+
+        <TextView
+            style="@style/HeaderText2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin16"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:padding="@dimen/padding1"
+            android:text="@string/edit_profile"
+            android:textAlignment="center" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin16"
+            android:layout_weight="0"
+            android:src="@drawable/ic_chat"
+            android:visibility="invisible"
+            app:tint="@color/primary" />
+
+    </LinearLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/picture"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size280"
+                android:layout_marginHorizontal="@dimen/margin16"
+                android:layout_marginTop="@dimen/margin16"
+                android:background="@color/grayscale200"
+                android:scaleType="centerCrop"
+                app:shapeAppearanceOverlay="@style/CornerSize8"
+                tools:src="@drawable/default_user_picture" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin16"
+                android:layout_marginTop="@dimen/margin8"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/remove"
+                    android:layout_width="@dimen/size32"
+                    android:layout_height="@dimen/size32"
+                    android:layout_marginEnd="@dimen/margin8"
+                    android:background="@color/primary"
+                    android:src="@drawable/ic_trash"
+                    app:contentPadding="@dimen/padding4"
+                    app:shapeAppearanceOverlay="@style/CornerSize50Percent"
+                    app:tint="@color/white" />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/update"
+                    android:layout_width="@dimen/size32"
+                    android:layout_height="@dimen/size32"
+                    android:layout_marginStart="@dimen/margin8"
+                    android:background="@color/primary"
+                    android:src="@drawable/ic_reload"
+                    app:contentPadding="@dimen/padding4"
+                    app:shapeAppearanceOverlay="@style/CornerSize50Percent"
+                    app:tint="@color/white" />
+
+            </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin16"
+                android:layout_marginTop="@dimen/margin16"
+                app:boxCornerRadiusBottomEnd="@dimen/cornerRadius16"
+                app:boxCornerRadiusBottomStart="@dimen/cornerRadius16"
+                app:boxCornerRadiusTopEnd="@dimen/cornerRadius16"
+                app:boxCornerRadiusTopStart="@dimen/cornerRadius16"
+                app:endIconMode="clear_text">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/poppins_regular"
+                    android:hint="@string/name"
+                    android:imeOptions="actionNext"
+                    android:includeFontPadding="false"
+                    android:inputType="textCapSentences" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin16"
+                android:layout_marginTop="@dimen/margin8"
+                app:boxCornerRadiusBottomEnd="@dimen/cornerRadius16"
+                app:boxCornerRadiusBottomStart="@dimen/cornerRadius16"
+                app:boxCornerRadiusTopEnd="@dimen/cornerRadius16"
+                app:boxCornerRadiusTopStart="@dimen/cornerRadius16"
+                app:endIconMode="clear_text">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/surname"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/poppins_regular"
+                    android:hint="@string/surname"
+                    android:imeOptions="actionDone"
+                    android:includeFontPadding="false"
+                    android:inputType="textCapSentences" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/save"
+                style="@style/ButtonPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/margin16"
+                android:enabled="false"
+                android:text="@string/save" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

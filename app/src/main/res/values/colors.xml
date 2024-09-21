@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="transparent">#00FFFFFF</color>
+
+    <color name="primary">#041354</color>
+    <color name="secondary">#FACD11</color>
+
+    <color name="error">#DC666E</color>
+    <color name="success">#138928</color>
+
+    <color name="grayscale900">#0A0A0A</color>
+    <color name="grayscale800">#1A1A1A</color>
+    <color name="grayscale700">#333333</color>
+    <color name="grayscale600">#4D4D4D</color>
+    <color name="grayscale500">#666666</color>
+    <color name="grayscale400">#858585</color>
+    <color name="grayscale300">#A3A3A3</color>
+    <color name="grayscale200">#C2C2C2</color>
+    <color name="grayscale100">#E0E0E0</color>
+    <color name="grayscale50">#F0F0F0</color>
+    <color name="grayscale25">#F5F5F5</color>
+
+    <color name="screen_background">#F6F8FD</color>
+    <color name="transparentBlack55">#8C000000</color>
+
+</resources>
